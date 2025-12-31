@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Afsina Parveen TM | Data Analyst & ML Enthusiast</title>
+  <meta name="description" content="Portfolio of Afsina Parveen TM – Data Analyst, Machine Learning and AI enthusiast." />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --card-bg: rgba(255, 255, 255, 0.75);
+      --accent: #2563eb;
+      --text: #475569;
+      --blur: blur(12px);
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #eef2ff, #f9a8d4);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2.5rem;
+    }
+
+    header h1 {
+      font-size: clamp(2.2rem, 4vw, 3rem);
+      color: var(--accent);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    header p {
+      margin-top: 1rem;
+      opacity: 0.85;
+    }
+
+    main section {
+      padding: 4rem 8%;
+    }
+
+    .section-title {
+      font-size: 1.9rem;
+      color: var(--accent);
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: var(--blur);
+      border-radius: 18px;
+      padding: 1.5rem;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      transform: translateY(30px);
+      opacity: 0;
+      transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.3s ease;
+      will-change: transform, opacity;
+    }
+
+    .card.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 28px 55px rgba(37, 99, 235, 0.25);
+    }
+
+    .card h3 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @media (max-width: 768px) {
+      main section {
+        padding: 3rem 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>AFSINA PARVEEN TM</h1>
+    <p>Data Analyst | Machine Learning | AI</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2 class="section-title">About Me</h2>
+      <div class="card">
+        <p>
+          I'm a Plus One student pursuing Bioscience, specializing in AI & Machine Learning
+          and Junior Telecom Data Analytics. Passionate about technology-driven solutions
+          and hands-on learning.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Education</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>AI & ML – Jr. Telecom Data Analytics</h3>
+          <p>SDC-Pudukad<p>
+        </div>
+        <div class="card">
+          <h3>Plus One – Biology</h3>
+          <p>Ghss Kannattupadam<p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ MERGED SECTION -->
+    <section>
+      <h2 class="section-title">Certificates</h2>
+      <div class="grid">
+
+        <div class="card">
+          <h3>On-The-Job Training</h3>
+          <p>ATEES info media Pvt Ltd, Thrissur</p>
+          <p>Hands-on industry exposure and professional development.</p>
+        </div>
+
+        <div class="card">
+          <h3>Industrial Visit</h3>
+          <p>ATEES info media Pvt Ltd, Thrissur</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Project</h2>
+      <div class="card">
+        <h3>Smart Waste Classifier</h3>
+        <p>
+          Developed a waste classification system using real-world datasets.
+          Implemented data analysis and ML workflows using Pandas, NumPy,
+          Matplotlib, Seaborn, and Scikit-learn.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Skills</h2>
+      <div class="grid">
+        <div class="card">Python</div>
+        <div class="card">Data Analysis</div>
+        <div class="card">Machine Learning</div>
+        <div class="card">Communication</div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Contact</h2>
+      <div class="card">
+        <p>📞 9497691519</p>
+        <p>📧 afsinaparveen0@gmail.com</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 Afsina Parveen TM | Portfolio
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.card').forEach(card => observer.observe(card));
+  </script>
+
+</body>
+</html>
